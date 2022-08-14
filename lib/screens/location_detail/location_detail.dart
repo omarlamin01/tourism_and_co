@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
@@ -8,29 +9,13 @@ class LocationDetail extends StatelessWidget {
         title: const Text('Hello World!'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              color: Colors.red,
-            ),
-            child: const Text('Some bull shit'),
-          ),
-
-          Container(
-            decoration: const BoxDecoration(
-              color: Colors.green,
-            ),
-            child: const Text('Some bull shit'),
-          ),
-
-          Container(
-            decoration: const BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: const Text('Some bull shit'),
-          ),
+          TextSection(Colors.red),
+          TextSection(Colors.green),
+          TextSection(Colors.blue),
+          TextSection(Colors.orange),
         ],
       ),
     );
