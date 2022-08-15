@@ -4,7 +4,6 @@ class TextSection extends StatelessWidget {
 
   final Color _color;
 
-
   const TextSection(this._color);
 
   @override
